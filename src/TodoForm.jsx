@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 const TodoForm = () => {
-  return <div><input type="text"/>
-    <button>submit</button></div>;
+  const [value, setValue] = useState('')
+  return <div>
+    <input type="text"/>
+    <button>submit</button>
+  </div>;
 };
 
 export default TodoForm;
